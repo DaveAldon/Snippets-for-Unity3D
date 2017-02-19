@@ -15,11 +15,6 @@ public class doorAnim : MonoBehaviour {
     lengthOfAnim = anim.length;
   }
 
-  //Need to constantly store the animation time to be used later
-  public void Update() {
-    animTime = anim.time;
-  }
-
   //Another class triggers this function, which sets the door state bool to the opposite of whatever it is
   public void triggerDoor() {
     open = !open;
